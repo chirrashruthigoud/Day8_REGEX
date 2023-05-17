@@ -33,9 +33,9 @@ namespace RegularExpressionExample
                 case 5:
                     name.EmailType("sara@2gmail.com");
                     break;
-                //case 6:
-                //        name.Password("Slkal2#8521");
-                //        break;
+                case 6:
+                    name.Password("Slkal2#8521");
+                    break;
 
                 default: 
                     Console.WriteLine("invalid");

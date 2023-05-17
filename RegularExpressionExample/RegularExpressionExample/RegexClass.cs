@@ -20,10 +20,10 @@ namespace RegularExpressionExample
             {
                 Console.WriteLine("{0}is invalid", name);
             }
-        
+
         }
-      public void LastName(string lastname)
-       {
+        public void LastName(string lastname)
+        {
             string pattern = "^[A-Z]{1}[a-z]{2,}$";
             if (Regex.IsMatch(lastname, pattern))
             {
@@ -70,6 +70,18 @@ namespace RegularExpressionExample
             else
             {
                 Console.WriteLine("{0}is invalid", mail);
+            }
+        }
+        public void Password(string password)
+        {
+            string pattern = "^[A-Z]{1}[a-z0-9]+[$#%&*!@][0-9]";
+            if (Regex.IsMatch(password, pattern))
+            {
+                Console.WriteLine("{0} is valid", password);
+            }
+            else
+            {
+                Console.WriteLine("{0}is invalid", password);
             }
         }
     }
