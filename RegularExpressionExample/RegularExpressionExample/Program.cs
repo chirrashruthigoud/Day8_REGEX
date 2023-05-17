@@ -12,22 +12,22 @@ namespace RegularExpressionExample
         {
             RegexClass name = new RegexClass();
             Console.WriteLine("Select one:");
-            Console.WriteLine("1.First Name \n2.Second Name")
-                //"\n3.PhoneNumber \n4.CheckEmail" +
+            Console.WriteLine("1.First Name \n2.Second Name \n3.PhoneNumber ")
+                //"\n4.CheckEmail" +
                 //"\n5.EmailType \n6.PassWord");
             int num=Convert.ToInt32(Console.ReadLine());
             switch (num)
             {
                 case 1:
-                    name.FirstName("Shruthi");
+                    name.FirstName("Sara");
                     break;
                case 2:
 
-                     name.LastName("Guntuku");
+                     name.LastName("Gunt");
                      break;
-            // case 3:
-            //        name.PhoneNumber("+91658745960");
-            //        break;
+               case 3:
+                    name.PhoneNumber("+91658745960");
+                    break;
             //case 4:
             //        name.Email("abc@gmail.com");
             //        break;

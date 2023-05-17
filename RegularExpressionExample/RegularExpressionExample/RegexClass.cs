@@ -34,6 +34,17 @@ namespace RegularExpressionExample
                 Console.WriteLine("{0}is invalid", lastname);
             }
         }
-
+        public void PhoneNumber(string phonenum)
+        {
+            string pattern = "^[+][9-0]{2}[0-9]{3,}$";
+            if (Regex.IsMatch(phonenum, pattern))
+            {
+                Console.WriteLine("{0} is valid", phonenum);
+            }
+            else
+            {
+                Console.WriteLine("{0}is invalid", phonenum);
+            }
+        }
     }
 }
