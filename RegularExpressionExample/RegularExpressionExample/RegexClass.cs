@@ -46,5 +46,18 @@ namespace RegularExpressionExample
                 Console.WriteLine("{0}is invalid", phonenum);
             }
         }
+        // abc.100@abc.com.au
+        public void Email(string mail)
+        {
+            string pattern = "^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
+            if (Regex.IsMatch(mail, pattern))
+            {
+                Console.WriteLine("{0} is valid", mail);
+            }
+            else
+            {
+                Console.WriteLine("{0}is invalid", mail);
+            }
+        }
     }
 }
