@@ -59,5 +59,18 @@ namespace RegularExpressionExample
                 Console.WriteLine("{0}is invalid", mail);
             }
         }
+        //abc@1.com
+        public void EmailType(string mail)
+        {
+            string pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$";
+            if (Regex.IsMatch(mail, pattern))
+            {
+                Console.WriteLine("{0} is valid", mail);
+            }
+            else
+            {
+                Console.WriteLine("{0}is invalid", mail);
+            }
+        }
     }
 }
