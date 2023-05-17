@@ -22,6 +22,18 @@ namespace RegularExpressionExample
             }
         
         }
+      public void LastName(string lastname)
+       {
+            string pattern = "^[A-Z]{1}[a-z]{2,}$";
+            if (Regex.IsMatch(lastname, pattern))
+            {
+                Console.WriteLine("{0} is valid", lastname);
+            }
+            else
+            {
+                Console.WriteLine("{0}is invalid", lastname);
+            }
+        }
 
     }
 }
